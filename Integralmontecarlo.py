@@ -5,7 +5,7 @@ Created on Mon Dec 30 21:41:22 2019
 @author: Guru
 """
 #This program computes the value of an intgral by using the Monte Carlo method
-#any integral can be be boken up into a summation with infinite terms as the step tends to zero according to the fundamental theorem of Integral calculus.
+#any integral can be be broken up into a summation with infinite terms as the step tends to zero according to the fundamental theorem of Integral calculus.
 #the function in the integral sign is repeatedly calculated for a series of random points within thr range of the limits.
 #this is achieved using the uniform() function  in the random library,it creates random floating point numbers within the specified range.
 #for thsi particular example, integral(sin(x)) between 0 and pi is taken as a benchmark.
