@@ -7,3 +7,4 @@ Contents:-
 1)Simulation of simple pendulum by Euler's method.
 2)estimating the value of Pi using Monte Carlo method.
 3)Estimating integrals using Monte Carlo method.
+4)A simple code for implementing Runge kutte 4 th order method.
