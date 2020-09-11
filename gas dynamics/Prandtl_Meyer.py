@@ -2,7 +2,7 @@
 
 import math
 
-#defining Prantdl  Meyer Expansion function that returns a value in degrees
+#defining Prandtl  Meyer Expansion function that returns a value in degrees
 #this function calculates the value of the Prandtl Meyer expansion dunction for a given upstream Mach number
 
 
