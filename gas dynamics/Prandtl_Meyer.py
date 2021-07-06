@@ -9,14 +9,16 @@ import math
 
 def prandtl_meyer(M):
     gamma=1.40
-    nu_rad=math.sqrt((gamma+1)/(gamma-1))*math.atan((((gamma-1)/(gamma+1))*((M*2)-1)))-math.atan(math.sqrt((M**2)-1))
+    p=math.sqrt((gamma-1)/(gamma+1))
+    q=math.sqrt((M**2)-1)
+    nu_rad=(1/p)*math.atan(p*q)-math.atan(q)
     nu_deg=nu_rad*((180.0)/(math.pi))  
     return nu_deg
 
 #This function inverts the above function numerically to give a value of the downstream mach number
 
 def prandtl_meyer_inverse(nu2):    
-    nuinf=(math.pi/2)*((math.sqrt(6))-1)   
+    nuinf=((math.pi/2)*((math.sqrt(6))-1))*(180/math.pi)   
     A =1.3604
     B =0.0962
     C =-0.5127
@@ -27,7 +29,7 @@ def prandtl_meyer_inverse(nu2):
     return M2
 
 
-   #This function calls the above two function to compute the downstream Mach number when upstream mach number is known along with deflection angle 
+ #This function calls the above two function to compute the downstream Mach number when upstream mach number is known along with deflection angle 
 def Prandtl_Meyer_solve():   
     M1=float(input("Enter the upstream Mach number:-"))
     theta=float(input("enter the flow deflection corner angle(degrees):-"))
