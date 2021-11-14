@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Dec 28 10:37:08 2020
-
-@author: AE-NMIT
-"""
-
 
 import matplotlib.pyplot as plt
 
